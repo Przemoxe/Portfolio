@@ -1,0 +1,187 @@
+body{
+    background-color: #212121;
+}
+
+.timeline{
+    list-style-type: none;
+    color:white;
+}
+.timeline::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 7px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+    background: #fff;
+}
+.timeline > li::before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+}
+.timeline > li h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.owl-dot .active{
+    color:orange!important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: orange!important;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background:#d6d6d698;
+}
+/* gallery */
+.gallery-title{
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #3F6184;
+    padding:5px 10px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 30px;
+    background:transparent;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffffff;
+    background-color:#3F6184;
+    outline:none;
+}
+.gallery_product{
+    margin: 0px;
+    padding:0;
+    position:relative;
+}
+.gallery_product .img-info{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow:hidden;
+    color:#fff;
+    top:0;
+    display:none;
+       -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.gallery_product:hover .img-info{
+    display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+/*	end gallery */
+
+/*iconki/] */
+.icon-setting{
+    color:white;
+    font-size:40px;
+    transition:ease-out .2s;
+    text-decoration: none;
+}
+.icon-setting:hover{
+    color:orange;
+    
+}
+.icon-setting-footer
+{
+    color:white;
+    font-size:16px;
+    transition:ease-out .2s;
+    text-decoration: none;
+}
+.icon-setting-footer:hover{
+    color:orange;
+}
+
+
+/*navbar*/
+.navbar-dark .navbar-nav .nav-link{
+    color:white!important;
+    transition:ease-out .2s;
+    font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:orange!important;
+}
+
+.h-change{
+    font-size: 50px;
+    font-weight: 900;
+    color:white!important;
+}
+@media only screen and (max-width: 768px) {
+
+    .h-change{
+        font-size: 30px;
+        font-weight: 900;
+        color:white!important;
+    }
+}
+.menu{
+    color:white!important;
+    display:flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+
+    .menu{
+        color:white!important;
+        display:flex;
+        justify-content: center;
+    }
+}
+
+/* portfolio */
+
+
+.kafelki_portfolio h5{
+    font-size: 24px;
+    font-weight: 900;
+    color: white!important;
+    line-height: 2;
+    text-align: center;
+}
+.image_portfolio{
+    height:30vh;
+}
+.image_portfolio p{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.image_portfolio p img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: .3s linear;
+    border: 10px solid orange;
+    border-radius: 20px;
+}
+.image_portfolio p img:hover{
+    opacity: 0.6;
+}
+
